@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.lxd.percent.PercentRelativeLayout
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_selfAspectRatio="300%"
+        android:background="@drawable/aspect_demo_bg"
+        >
+        <ImageView
+            android:id="@+id/img"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_widthPercent="20%"
+            app:layout_aspectRatio="90%"
+            android:src="@mipmap/demo"
+            />
+        <TextView
+            android:id="@+id/title"
+            android:layout_margin="15dp"
+            android:layout_toLeftOf="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:text="关于阿里巴巴为什么不叫阿里妈妈的研究报告"
+            />
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2018年05月01日"
+            />
+    </com.lxd.percent.PercentRelativeLayout>
+
+    <com.lxd.percent.PercentLinearLayout
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        android:background="#f0f"
+        app:layout_selfAspectRatio="200%"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:text="x = 20%W  x:y = 1:1"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            app:layout_widthPercent="20%"
+            app:layout_aspectRatio="100%"
+            android:background="#fff"
+            android:layout_height="0dp" />
+
+    </com.lxd.percent.PercentLinearLayout>
+
+    <com.lxd.percent.PercentFrameLayout
+        android:layout_margin="15dp"
+        android:background="#0f0"
+        app:layout_selfAspectRatio="100%"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.lxd.percent.PercentFrameLayout>
+</LinearLayout>

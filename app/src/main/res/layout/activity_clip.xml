@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.lxd.percent.PercentLinearLayout
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+        app:enable_clip="true"
+        app:round_corner="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#ff00ff"
+            android:layout_height="70dp">
+
+        </LinearLayout>
+        <View
+            android:background="#00ff00"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            />
+        <ProgressBar
+            android:progress="50"
+            android:max="100"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+    </com.lxd.percent.PercentLinearLayout>
+    <com.lxd.percent.PercentRelativeLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        app:enable_clip="true"
+        app:round_as_circle="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp">
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#ff0"
+            />
+        <ImageView
+            android:layout_below="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#f00"
+            />
+    </com.lxd.percent.PercentRelativeLayout>
+
+    <com.lxd.percent.PercentFrameLayout
+        app:enable_clip="true"
+        android:layout_margin="15dp"
+        app:round_corner_top_left="20dp"
+        app:round_corner_top_right="20dp"
+        app:round_corner_bottom_right="20dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0f0"
+            />
+    </com.lxd.percent.PercentFrameLayout>
+
+    <com.lxd.percent.PercentFrameLayout
+        app:enable_clip="true"
+        android:layout_margin="15dp"
+        app:round_corner_top_left="20dp"
+        app:round_corner_top_right="20dp"
+        app:round_corner_bottom_right="20dp"
+        app:layout_stroke_width="5dp"
+        app:layout_stroke_color="@color/colorAccent"
+        android:layout_width="100dp"
+        android:layout_height="100dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0f0"
+            />
+    </com.lxd.percent.PercentFrameLayout>
+</LinearLayout>

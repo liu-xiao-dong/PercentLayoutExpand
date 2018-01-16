@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lxd.percent.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="20%"
+        android:gravity="center"
+        android:background="#00ff00"
+        android:text="20%"
+        />
+    <com.lxd.percent.PercentLinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        app:layout_heightPercent="30%"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="20%"
+            android:gravity="center"
+            android:text="20%"
+            android:background="#0000ff"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="30%"
+            android:gravity="center"
+            android:text="30%"
+            android:background="#fff"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="30%"
+            android:gravity="center"
+            android:text="30%"
+            android:background="#0000ff"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="20%"
+            android:gravity="center"
+            android:text="20%"
+            android:background="#fff"
+            />
+    </com.lxd.percent.PercentLinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        app:layout_heightPercent="30%"
+        android:background="#ff00ff"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30%"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="20%"
+        />
+</com.lxd.percent.PercentLinearLayout>

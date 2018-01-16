@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PercentLayout_Layout">
+        <attr name="layout_widthPercent" format="fraction" />
+        <attr name="layout_heightPercent" format="fraction" />
+        <attr name="layout_marginPercent" format="fraction" />
+        <attr name="layout_marginLeftPercentX" format="fraction" />
+        <attr name="layout_marginLeftPercentY" format="fraction" />
+        <attr name="layout_marginLeftPercentScreenX" format="fraction" />
+        <attr name="layout_marginTopPercentX" format="fraction" />
+        <attr name="layout_marginTopPercentY" format="fraction" />
+        <attr name="layout_marginTopPercentScreenX" format="fraction" />
+        <attr name="layout_marginRightPercentX" format="fraction" />
+        <attr name="layout_marginRightPercentY" format="fraction" />
+        <attr name="layout_marginRightPercentScreenX" format="fraction" />
+        <attr name="layout_marginBottomPercentX" format="fraction" />
+        <attr name="layout_marginBottomPercentY" format="fraction" />
+        <attr name="layout_marginBottomPercentScreenX" format="fraction" />
+        <attr name="layout_marginStartPercent" format="fraction" />
+        <attr name="layout_marginEndPercent" format="fraction" />
+        <attr name="layout_aspectRatio" format="fraction" />
+        <attr name="layout_selfAspectRatio" format="fraction" />
+        <attr name="layout_widthTextSizePercent" format="fraction" />
+        <attr name="layout_screenWidthTextSizePercent" format="fraction" />
+        <attr name="layout_heightTextSizePercent" format="fraction" />
+
+        <!--是否使用裁剪功能-->
+        <attr name="enable_clip" format="boolean"/>
+        <!--圆形-->
+        <attr name="round_as_circle" format="boolean"/>
+        <!--全部圆角半径-->
+        <attr name="round_corner" format="integer|dimension"/>
+        <!--针对各个角的半径-->
+        <attr name="round_corner_top_left" format="integer|dimension"/>
+        <attr name="round_corner_top_right" format="integer|dimension"/>
+        <attr name="round_corner_bottom_left" format="integer|dimension"/>
+        <attr name="round_corner_bottom_right" format="integer|dimension"/>
+
+        <!--描边颜色／半径-->
+        <attr name="layout_stroke_color" format="color|reference"/>
+        <attr name="layout_stroke_width" format="integer|dimension"/>
+    </declare-styleable>
+
+
+</resources>
