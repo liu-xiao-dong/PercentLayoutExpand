@@ -17,7 +17,7 @@
 
 ```gradle
 
-compile 'com.lxd.percent:percent:1.0.0'
+compile 'com.lxd.percent:percent:1.0.1'
 
 ```
 2.在xml中使用PercentLinerLayout、PercentRelativeLayout、PercentFrameLayout;
