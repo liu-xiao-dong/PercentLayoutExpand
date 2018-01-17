@@ -85,7 +85,7 @@ public class ClipHelper {
             PointF center = new PointF(w / 2, h / 2);
             mClipPath.setFillType(Path.FillType.INVERSE_EVEN_ODD);
             mClipPath.addRect(areas, Path.Direction.CW);
-            mClipPath.addCircle(center.x, center.y, r, Path.Direction.CW);
+            mClipPath.addCircle(center.x, center.y, r -0.5f, Path.Direction.CW);
             mStrokePath.addCircle(center.x, center.y, r, Path.Direction.CW);
         } else {
             mClipPath.setFillType(Path.FillType.EVEN_ODD);

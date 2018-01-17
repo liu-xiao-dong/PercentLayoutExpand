@@ -35,7 +35,7 @@ dependencies {
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
-version = "1.0.0"//定义版本标识
+version = "1.0.1"//定义版本标识
 
 def siteUrl = 'https://github.com/liu-xiao-dong/PercentLayoutExpand'                        // #CONFIG# // project homepage
 def gitUrl = 'https://github.com/liu-xiao-dong/PercentLayoutExpand.git'                     // #CONFIG# // project git
@@ -49,7 +49,7 @@ install {
                 packaging 'aar'
                 // Add your description here
                 description 'percent layout expand'
-                name 'androidUiAlertView'  // 可默认，项目描述
+                name 'android layout helper'  // 可默认，项目描述
                 url siteUrl
                 // Set your license
                 licenses {
