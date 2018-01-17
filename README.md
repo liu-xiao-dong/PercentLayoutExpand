@@ -10,12 +10,14 @@
 ![PercentLayoutExpand](https://github.com/liu-xiao-dong/PercentLayoutExpand/blob/master/screenshot/screenshot_full.png?raw=true) ![PercentLayoutExpand](https://github.com/liu-xiao-dong/PercentLayoutExpand/blob/master/screenshot/screenshot_aspect.png?raw=true)  
 ![PercentLayoutExpand](https://github.com/liu-xiao-dong/PercentLayoutExpand/blob/master/screenshot/screenshot_clip.png?raw=true)
 
+### 下载体验：
+![PercentLayoutExpand](https://github.com/liu-xiao-dong/PercentLayoutExpand/blob/master/screenshot/download.png?raw=true)
 ### 使用步骤：
 1.添加gradle依赖：
 
 ```gradle
 
-compile 'com.lxd.percent:percent:1.0.0'
+compile 'com.lxd.percent:percent:1.0.1'
 
 ```
 2.在xml中使用PercentLinerLayout、PercentRelativeLayout、PercentFrameLayout;
@@ -87,4 +89,5 @@ compile 'com.lxd.percent:percent:1.0.0'
  
  ### 注意事项：
  1.布局本身使用layout_selfAspectRatio属性的时候，当前未定义方向为warp_content,如定义为0dp则不生效；
+ 
  2.布局本身在x  or y方向上使用layout_selfAspectRatio属性时，子控件在该方向不可使用layout_widthPercent or layout_heightPercent属性，否则按布局的父布局的该放方向尺寸为基数计算百分比；
